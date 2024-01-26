@@ -63,8 +63,13 @@
 
 <p aling = "center"><em> 6. select a port for server eg:9898 </em> </p>
 
+
 ``` ./client 127.0.0.1 9898  ```
 
 <p aling = "center"><em> 7.You can use any port that is valid in place of 9898 </em> </p>
 <p aling = "center"><em> At last the result will look like this .</em> </p>
+
+<img width="1464" alt="Screenshot 2024-01-26 at 11 07 48 PM" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/05205cd2-f2fe-43b7-b4ad-0b9caf54308f">
+
+<p aling = "center"><em> Next goal adding Secure Socket Layer and Then Encryption </em> </p>
 
