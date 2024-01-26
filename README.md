@@ -13,3 +13,4 @@
 <p align = "center" ><b>In the below diagram you can see how the function gonna work in a sequential mannar and interaction between them . </b></p>
 <br>
 <img width="1000" alt="Screenshot 2024-01-26 at 4 01 52 PM" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/bcf3845d-ed43-4dbc-bbe3-eb155eb1b887">
+<p align="center"><strong> All the function used and their details </strong></p>
