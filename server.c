@@ -71,6 +71,5 @@ serv_addr.sin_port = htons(portno) ;
   }
   close(newsockfd) ;
   close(sockfd) ;
-  printf("executed ");
   return 0 ;
 }
