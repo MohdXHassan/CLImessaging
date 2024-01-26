@@ -75,5 +75,17 @@
 <br>
 <br>
 
-<p align = "center"><b> Next goal adding Secure Socket Layer and Then Encryption <b> </p>
+<p align = "center"><b> Basic XOR encryption on the message  <b> </p>
+ 
+ ```
+ // additional thing encryption and decryption (symmetric encryption and decryption)
+void xorEncryptDecrypt(char *input, size_t length, const char *key) {
+    size_t keyLen = strlen(key);
+    for (size_t i = 0; i < length; ++i) {
+        input[i] = input[i] ^ key[i % keyLen];
+    }
+}
+ ```
+ <br>
+<p align = "center"><b> Next goal adding Secure Socket Layer  <b> </p>
 
