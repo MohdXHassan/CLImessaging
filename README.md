@@ -44,10 +44,10 @@
  <h2 align="center"> 6. read() and write() </h2>
 <br>
 <img width="1000" alt="readwrite" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/657492ee-2892-41a5-b124-894f8339ae95">
-<h1 align="center"> For running the cli messaging app </h1>
-<p align = "center"><em> 1. Open two terminal windows</em> </p>
+<h1 align="center"> <b>For running the cli messaging app</b> </h1>
+<p ><em> 1. Open two terminal windows</em> </p>
 <br>
-<p align = "center"><em> 2. Open the directory in which the file is saved </em> </p>
+<p ><em> 2. Open the directory in which the file is saved </em> </p>
 <br>
 <p ><em> 3. Run this code for server </em> </p>
 
