@@ -1,16 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
+#include <stdio.h> // std input output 
+#include <stdlib.h> // std library
+#include <string.h> // for strings 
+#include <unistd.h>    // for miscellaneous functions
+#include <sys/types.h> // for types TCP / UDP
+#include <sys/socket.h> // for sockets
+#include <netinet/in.h> // for Address family 
 
+// for printing different error messages .
 void error( const char *msg )
 {
 	perror(msg) ;
 	exit(1) ;
 }
+// command line input for ports and all .
 int main(int argc , char *argv[]) {
 if(argc < 2){
 
@@ -24,7 +26,9 @@ char buffer[255] ;
 // for server and client
 struct sockaddr_in serv_addr , cli_addr ;
 
+  
 socklen_t clilen ;
+
 sockfd = socket(AF_INET,SOCK_STREAM,0) ;
 if(sockfd<0){
 	error("Error openeing Socket : ") ;
@@ -54,22 +58,27 @@ serv_addr.sin_port = htons(portno) ;
 
   while(1){
   	bzero(buffer,255) ;
+  	// reading if any input is present.
   	n = read(newsockfd,buffer,255 ) ;
+  	// if not its error in reading 
   	if( n < 0 ){
   		error("Error on reading") ;
   	}
   	printf("%s\n",buffer);
 	bzero(buffer,255) ;
 	fgets(buffer,255,stdin) ;
-
+ // writing output on the server terminal 
 	n = write(newsockfd,buffer,strlen(buffer)) ;
     if( n < 0 ){
+    	// if noting written then error in write 
     	error("Error in writing") ;
     }
     int i = strncmp("BYE" , buffer , 3) ;
     if( i == 0 ) break ;
   }
+  // freeing the sockets after the communi cation
   close(newsockfd) ;
   close(sockfd) ;
+
   return 0 ;
 }
