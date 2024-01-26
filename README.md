@@ -26,7 +26,7 @@
 <br>
 <img width="1000" alt="listen" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/d26c6152-3cf0-4812-a07d-e8f2001e8be5">
 <br>
-<p align="center"> (4) accept() </p>
+<p align="center"><h2> (4) accept()</h2> </p>
 <br>
 <img width="1000" alt="accept" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/ed8d6230-fcf8-4eec-af4a-887e7ad6f393">
 <br>
