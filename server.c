@@ -6,6 +6,14 @@
 #include <sys/socket.h> // for sockets
 #include <netinet/in.h> // for Address family 
 
+
+// additional thing encryption and decryption
+void xorEncryptDecrypt(char *input, size_t length, const char *key) {
+    size_t keyLen = strlen(key);
+    for (size_t i = 0; i < length; ++i) {
+        input[i] = input[i] ^ key[i % keyLen];
+    }
+}
 // for printing different error messages .
 void error( const char *msg )
 {
@@ -64,9 +72,17 @@ serv_addr.sin_port = htons(portno) ;
   	if( n < 0 ){
   		error("Error on reading") ;
   	}
+
+    // Decrypt received message
+    xorEncryptDecrypt(buffer, n, "secretkey");
+
   	printf("%s\n",buffer);
 	bzero(buffer,255) ;
 	fgets(buffer,255,stdin) ;
+
+   // Encrypt the message before sending
+    xorEncryptDecrypt(buffer, strlen(buffer), "Hassan");
+
  // writing output on the server terminal 
 	n = write(newsockfd,buffer,strlen(buffer)) ;
     if( n < 0 ){
