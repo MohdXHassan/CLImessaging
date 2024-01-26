@@ -1,9 +1,9 @@
 # CLImessaging
-<p align = "center" >"Command line messaging and data transferring  application (Just for fun)"</p>
+<p align = "center" ><b>Command line messaging and data transferring  application (Just for fun)</b></p>
 <br>
 <p align = "center" ><b>Reference Documents: </b>" https://www.csd.uoc.gr/~hy556/material/tutorials/cs556-3rd-tutorial.pdf"</p>
 <br>
-<p align = "center" >"I have use similar approach but not just copied it so my code may look different but it does the same thing ."</p>
+<p align = "center" ><em>I have use similar approach but not just copied it so my code may look different but it does the same thing .</em></p>
 </br>
 
 <p align = "center" ><b>A set of instruction if you want to build one :- </b>"https://chat.openai.com/share/2733ae29-2679-4e6f-997d-e20d53b5529d "</p>
