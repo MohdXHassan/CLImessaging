@@ -1,5 +1,5 @@
 # CLImessaging
-<p align = "center" ><h1>Command line messaging and data transferring  application (Just for fun)</h1></p>
+<p align = "center" ><h2>Command line messaging and data transferring  application (Just for fun)</h2></p>
 <br>
 <p align = "center" ><b>Reference Documents: </b>" https://www.csd.uoc.gr/~hy556/material/tutorials/cs556-3rd-tutorial.pdf"</p>
 <br>
