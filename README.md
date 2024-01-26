@@ -6,7 +6,7 @@
 <p align = "center" ><b>Reference Documents :-</b>" https://www.csd.uoc.gr/~hy556/material/tutorials/cs556-3rd-tutorial.pdf"</p>
 <br>
 
-<p align = "center" ><em>I have use similar approach but not just copied it so my code may look different but it does the same thing .</em></p>
+<p align = "center" ><em>If you want to make one you can use the both the chat and the referrence .</em></p>
 <br>
 </br>
 
