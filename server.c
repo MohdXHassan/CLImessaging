@@ -40,9 +40,37 @@ serv_addr.sin_addr.s_addr = INADDR_ANY ;
 serv_addr.sin_port = htons(portno) ;
  
  if(bind(sockfd,(struct sockaddr *) &serv_addr ,sizeof(serv_addr)) < 0){
- 	error("Binding Failed :")
+ 	error("Binding Failed :") ;
  }
  listen(sockfd,5) ;
  clilen = sizeof(cli_addr) ;
  
+ // for accepting the connection . every time we get a new connection we need new file descriptor
+  newsockfd = accept(sockfd,(struct sockaddr *) &cli_addr,&clilen) ;
+  if(newsockfd < 0 ){
+  	error("Error on Accept") ;
+  } 
+  // code for the communication between client and server .
+
+  while(1){
+  	bzero(buffer,255) ;
+  	n = read(newsockfd,buffer,255 ) ;
+  	if( n < 0 ){
+  		error("Error on reading") ;
+  	}
+  	printf("%s\n",buffer);
+	bzero(buffer,255) ;
+	fgets(buffer,255,stdin) ;
+
+	n = write(newsockfd,buffer,strlen(buffer)) ;
+    if( n < 0 ){
+    	error("Error in writing") ;
+    }
+    int i = strncmp("BYE" , buffer , 3) ;
+    if( i == 0 ) break ;
+  }
+  close(newsockfd) ;
+  close(sockfd) ;
+  printf("executed ");
+  return 0 ;
 }
