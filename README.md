@@ -70,6 +70,8 @@
 <p aling = "center"><em> At last the result will look like this .</em> </p>
 
 <img width="1464" alt="Screenshot 2024-01-26 at 11 07 48 PM" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/05205cd2-f2fe-43b7-b4ad-0b9caf54308f">
+<br>
+<br>
 
-<p aling = "center"><em> Next goal adding Secure Socket Layer and Then Encryption </em> </p>
+<p aling = "center"><b> Next goal adding Secure Socket Layer and Then Encryption <b> </p>
 
