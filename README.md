@@ -49,24 +49,24 @@
 <br>
 <p align = "center"><em> 2. Open the directory in which the file is saved </em> </p>
 <br>
-<p align = "center"><em> 3. Run this code for server </em> </p>
+<p ><em> 3. Run this code for server </em> </p>
 
 ``` gcc server.c -o server  ```
 
-<p align = "center"><em> 4. select a port for server eg:9898 </em> </p>
+<p ><em> 4. select a port for server eg:9898 </em> </p>
 
 ```  ./server 9898 ```
 
-<p align = "center"><em> 5. Run this code for client </em> </p>
+<p ><em> 5. Run this code for client </em> </p>
 
 ``` gcc client.c -o client ```
 
-<p align = "center"><em> 6. select a port for server eg:9898 </em> </p>
+<p ><em> 6. select a port for server eg:9898 </em> </p>
 
 
 ``` ./client 127.0.0.1 9898  ```
 
-<p align = "center"><em> 7.You can use any port that is valid in place of 9898 </em> </p>
+<p ><em> 7.You can use any port that is valid in place of 9898 </em> </p>
 <p align = "center"><em> At last the result will look like this .</em> </p>
 
 <img width="1000" alt="Screenshot 2024-01-26 at 11 07 48 PM" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/05205cd2-f2fe-43b7-b4ad-0b9caf54308f">
