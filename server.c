@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+
+void error( const char *msg )
+{
+	perror(msg) ;
+	exit(1) ;
+}
+int main(int argc , char *argv[]) {
+if(argc < 2){
+
+	fprintf(stderr ,"Port Number  not provided. Program terminate\n");
+	exit(1) ;
+}
+// sockfd file descriptor for naming the socket and newsockfd for file descriptor after the connection is established .
+int sockfd , newsockfd ,portno ,n ;
+// buffer for message which we will use in data stream 
+char buffer[255] ;
+// for server and client
+struct sockaddr_in serv_addr , cli_addr ;
+
+socklen_t clilen ;
+sockfd = socket(AF_INET,SOCK_STREAM,0) ;
+if(sockfd<0){
+	error("Error openeing Socket : ") ;
+}
+// clear all data what ever it is referenced to .
+bzero((char*)&serv_addr,sizeof(serv_addr)) ;
+// argv[0] will store the file name and   argv[1] will contain the port number .
+portno = atoi(argv[1]) ;
+// address family for the transport address .
+serv_addr.sin_family = AF_INET ;
+serv_addr.sin_addr.s_addr = INADDR_ANY ;
+// host to network short (data type 2 byte ) "translates a short integer from host byte order to network byte order"
+serv_addr.sin_port = htons(portno) ;
+ 
+ if(bind(sockfd,(struct sockaddr *) &serv_addr ,sizeof(serv_addr)) < 0){
+ 	error("Binding Failed :")
+ }
+ listen(sockfd,5) ;
+ clilen = sizeof(cli_addr) ;
+ 
+}
