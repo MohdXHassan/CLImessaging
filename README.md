@@ -14,19 +14,19 @@
 <br>
 <img width="1000" alt="Screenshot 2024-01-26 at 4 01 52 PM" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/bcf3845d-ed43-4dbc-bbe3-eb155eb1b887">
 <p align="center"> <strong> All the function used and their details </strong> </p>
-<p align="center"> (1) socket() </p>
+ <h2 align="center">1.socket()</h2>
 <img width="1000" alt="socket" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/eded700e-faba-4b7f-a5fe-85892a730dc6">
 <br>
-<p align="center"> (2) bind() </p>
+<p align="center"> 2.bind() </p>
 <br>
 <img width="1000" alt="bind1" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/e1c6b6bf-e790-43bf-aa58-5f4ba7d59a3f">
 <br>
 <img width="1000" alt="bind2" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/cbc3a98c-d497-439d-9a93-5fa0e3936f27">
-<p align="center"> (3) listen() </p>
+<p align="center"> 3.listen() </p>
 <br>
 <img width="1000" alt="listen" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/d26c6152-3cf0-4812-a07d-e8f2001e8be5">
 <br>
-<p align="center"><h2> (4) accept()</h2> </p>
+<p align="center"><h2> 4. accept() </h2> </p>
 <br>
 <img width="1000" alt="accept" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/ed8d6230-fcf8-4eec-af4a-887e7ad6f393">
 <br>
