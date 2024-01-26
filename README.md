@@ -1,4 +1,4 @@
-<h1 align = "center" > CLImessaging </h1>
+<h1 align = "center" > Command Line Messaging </h1>
 <br>
 <p align = "center" ><strong>Command line messaging and data transferring  application (Just for fun)</strong></p>
 <br>
