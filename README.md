@@ -44,3 +44,17 @@
  <h2 align="center"> 6. read() and write() </h2>
 <br>
 <img width="1000" alt="readwrite" src="https://github.com/MohdXHassan/CLImessaging/assets/46120048/657492ee-2892-41a5-b124-894f8339ae95">
+<h1 align="center"> For running the cli messaging app </h1>
+<p aling = "center"><em> 1. Open two terminal windows</em> </p>
+<br>
+<p aling = "center"><em> 2. Open the directory in which the file is saved </em> </p>
+<br>
+<p aling = "center"><em> 3 Run this code for server </em> </p>
+``` gcc server.c -o server ```
+<p aling = "center"><em> select a port for server eg:9898 </em> </p>
+``` ./server 9898 ```
+<p aling = "center"><em> 4 Run this code for client </em> </p>
+``` gcc client.c -o client ```
+<p aling = "center"><em> select a port for server eg:9898 </em> </p>
+``` ./client 127.0.0.1 9898  ```
+<p aling = "center"><em> You can use any port that is valid in place of 9898 </em> </p>
