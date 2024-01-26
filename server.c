@@ -92,7 +92,7 @@ serv_addr.sin_port = htons(portno) ;
     int i = strncmp("BYE" , buffer , 3) ;
     if( i == 0 ) break ;
   }
-  // freeing the sockets after the communi cation
+  // freeing the sockets after the communication
   close(newsockfd) ;
   close(sockfd) ;
 
