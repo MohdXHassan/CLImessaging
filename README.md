@@ -90,7 +90,7 @@ void xorEncryptDecrypt(char *input, size_t length, const char *key) {
 <p align = "center"><b> Next goal adding AES  <b> </p>
 
 ```
- Changes is to be made at 172 and 190 line in AES.c accordingly so that it  works with buffer.
+ Changes is to be made at 172 and 190 line in AES.c accordingly so that it works with buffer.
  change whole main function so that we can use it as a procedure.
  may be next week for now i am off this thing but be back soon.
  BYE .
