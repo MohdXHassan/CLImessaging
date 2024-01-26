@@ -169,6 +169,7 @@ int main(int argc, char *argv[])
 
     // AES Encryption
     aes_encrypt(plaintext, ciphertext, key, SIZE_16);
+    // make changes so that it takes buffer as input .
 
     printf("\nCiphertext (HEX format):\n");
 
@@ -186,7 +187,7 @@ int main(int argc, char *argv[])
     {
         // char c =  decryptedtext[i] ;
         // printf("%c " , c ) ;
-
+        // changes so that it gives output decrypted buffer /
         printf("%2.2x%c", decryptedtext[i], ((i + 1) % 16) ? ' ' : '\n');
     }
 
