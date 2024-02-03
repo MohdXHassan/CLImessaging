@@ -90,8 +90,11 @@ void xorEncryptDecrypt(char *input, size_t length, const char *key) {
 <p align = "center"><b> Next goal adding AES  <b> </p>
 
 ```
+DONE ( 3-2-24 )
  Changes is to be made at 172 and 190 line in AES.c accordingly so that it works with buffer.
  change whole main function so that we can use it as a procedure.
  may be next week for now i am off this thing but be back soon.
  BYE .
 ```
+
+``` Make it multi thread for multiple client ```
