@@ -7,7 +7,6 @@ argv[2] :- portno
 argv[3] :- stores input string for encryption & decryptiom
 */
 
-
 #include <stdio.h> // std input output 
 #include <stdlib.h> // std library
 #include <string.h> // for strings 
